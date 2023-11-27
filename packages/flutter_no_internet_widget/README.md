@@ -24,6 +24,7 @@ In our boilerplate, you can use the widget like this:
             };
             return InternetWidget(
               offline: const FullScreenWidget(
+                // This child is your custom widget that you want to show
                 child: NoInternetScreen(),
               ),
               online: widget!,
