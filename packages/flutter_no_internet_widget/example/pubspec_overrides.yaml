@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: flutter_no_internet_widget
+dependency_overrides:
+  flutter_no_internet_widget:
+    path: ..

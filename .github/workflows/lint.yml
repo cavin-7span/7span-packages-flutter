@@ -1,0 +1,36 @@
+name: Flutter Lint
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.16.0"
+          cache: true
+          
+      - name: Install melos
+        run: flutter pub global activate melos
+
+      - name: Setup melos
+        run: melos bs
+
+      - name: Generate Assets, Enviroments Configurations and Hive Code
+        run: melos run build-runner
+
+      - name: Run Localisation Key Generation
+        run: melos run locale-gen
+
+      - name: Run Lint
+        run: melos run analyze
