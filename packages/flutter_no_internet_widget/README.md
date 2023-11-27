@@ -2,7 +2,7 @@
 ```yaml
   flutter_no_internet_widget:
     git:
-      url: https://github.com/Cavin6080/form_bloc.githttps://github.com/cavin-7span/7span-packages-flutter.git
+      url: https://github.com/cavin-7span/7span-packages-flutter.git
       path: packages/flutter_no_internet_widget
 ```
 
