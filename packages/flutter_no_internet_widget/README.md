@@ -1,6 +1,6 @@
 1. Add the package to your `pubspec.yaml` like this:
 ```yaml
-  flutter_form_bloc:
+  flutter_no_internet_widget:
     git:
       url: https://github.com/Cavin6080/form_bloc.githttps://github.com/cavin-7span/7span-packages-flutter.git
       path: packages/flutter_no_internet_widget
